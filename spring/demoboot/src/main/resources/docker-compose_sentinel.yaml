@@ -1,0 +1,127 @@
+version: '2'
+networks:
+  extnetwork:
+    ipam:
+      config:
+        - subnet: 172.17.0.0/16
+          gateway: 172.17.0.1
+services:
+  redis-master:
+    container_name: redis-master
+    #working_dir: /etc/redis/ 指定工作目录,就是容器的根目录，reids的rdb文件存放在./目录下
+    environment: # 环境变量,在执行redis.sh脚本中使用不同配置文件。
+      - PORT=6379
+    image: redis
+    restart: always
+    networks:
+      extnetwork:
+        ipv4_address: 172.17.0.2
+    ports:
+      - 6379:6379
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/etc/redis/ #当前执行目录（包括配置文件）挂载到/etc/redis目录下
+      - ./redis/data/redis-master:/data #redis数据挂载到宿主目录下，不指定工作目录，默认数据就存放在/data目录下　
+    entrypoint:
+      - /bin/bash
+      - /etc/redis/redis.sh #如果指定工作目录直接可以写redis.h
+    #command: redis-server /etc/redis/redis-6379.conf
+  redis-slave1:
+    container_name: redis-slave1
+    #working_dir: /etc/redis/
+    environment:
+      - PORT=6380
+    image: redis
+    restart: always
+    networks:
+      extnetwork:
+        ipv4_address: 172.17.0.3
+    ports:
+      - 6380:6379
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/etc/redis/
+      - ./redis/data/redis-slave1:/data
+    entrypoint:
+      - /bin/bash
+      - /etc/redis/redis.sh
+    depends_on:
+      - redis-master
+  redis-slave2:
+    container_name: redis-slave2
+    #working_dir: /etc/redis/
+    environment:
+      - PORT=6381
+    image: redis
+    restart: always
+    networks:
+      extnetwork:
+        ipv4_address: 172.17.0.4
+    ports:
+      - 6381:6379
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/etc/redis/
+      - ./redis/data/redis-slave2:/data
+    entrypoint:
+      - /bin/bash
+      - /etc/redis/redis.sh
+    depends_on:
+      - redis-master
+
+  sentinel-No1:
+    container_name: sentinel-No1
+    image: redis
+    restart: always
+    privileged: true
+    tty: true
+    volumes:
+      - ./:/etc/redis/
+    ports:
+      - 26379:26379
+    networks:
+      extnetwork:
+          ipv4_address: 172.17.0.5
+    command: redis-sentinel /etc/redis/sentinel-26379.conf
+    depends_on:
+      - redis-master
+  sentinel-No2:
+    container_name: sentinel-No2
+    image: redis
+    restart: always
+    privileged: true
+    tty: true
+    volumes:
+      - ./:/etc/redis/
+    ports:
+      - 26380:26379
+    networks:
+      extnetwork:
+          ipv4_address: 172.17.0.6
+    command: redis-sentinel /etc/redis/sentinel-26380.conf
+    depends_on:
+      - redis-master
+  sentinel-No3:
+    container_name: sentinel-No3
+    image: redis
+    restart: always
+    privileged: true
+    tty: true
+    volumes:
+      - ./:/etc/redis/
+    ports:
+      - 26381:26379
+    networks:
+      extnetwork:
+          ipv4_address: 172.17.0.7
+    command: redis-sentinel /etc/redis/sentinel-26381.conf
+    depends_on:
+      - redis-master
+
+

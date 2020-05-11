@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleft.org">
+<head>
+    <meta charset="UTF-8">
+    <title>跨域测试页面</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        function callbackFuc(result){
+            alert("callbackFunc调用成功："+result);
+        }
+        $(function () {
+            $("#btn_jsonp").click(function () {
+                var script=document.createElement("script");
+                script.type="text/javascript";
+                script.src="http://localhost:8090/test/jsonp";
+                document.getElementsByTagName("head")[0].appendChild(script);
+                // $.ajax({
+                //     url:"http://localhost:8090/test/jsonp",
+                //     type:"Get",
+                //     dataType:"jsonp",
+                //     jsonpCallback:"callbackFuc",
+                //     success:function (result) {
+                //         alert("ajax调用成功："+result);
+                //     }
+                // });
+            })
+
+            $("#btn").click(function () {
+                $.getJSON("http://localhost:8090/test/info",'',function (jsonData) {
+                    alert(jsonData);
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+
+<span style="color: red; font-weight: bold" th:text="${name}" />
+<h1>从<a href="http://localhost:8090/test/info/" target="_blank">http://localhost:8090/test/info/</a>获取返回结果</h1>
+
+<p><input type="button" value="点击获取返回结果" id="btn"/></p>
+
+<p><input type="button" value="需要与后端开发协作，jsonp方式callback执行，点击获取返回结果" id="btn_jsonp"/></p>
+
+<p>
+    返回结果为：
+    <span id="result"></span>
+</p>
+
+
+</body>
+</html>

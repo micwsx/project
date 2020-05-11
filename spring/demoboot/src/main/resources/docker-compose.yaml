@@ -1,0 +1,112 @@
+version: '2'
+networks:
+  extnetwork:
+    ipam:
+      config:
+        - subnet: 172.17.0.0/16
+          gateway: 172.17.0.1
+services:
+  redis-master1:
+    container_name: redis-master1
+    image: redis
+    restart: always
+    networks:
+      extnetwork:
+        ipv4_address: 172.17.0.2
+    ports:
+      - 6379:6379
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/etc/redis/ #当前执行目录（包括配置文件）挂载到/etc/redis目录下
+      - ./redis/data/redis-master1:/data #redis数据挂载到宿主目录下，不指定工作目录，默认数据就存放在/data目录下　
+    command: redis-server /etc/redis/redis-6379.conf
+  redis-master2:
+    container_name: redis-master2
+    image: redis
+    restart: always
+    networks:
+      extnetwork:
+        ipv4_address: 172.17.0.3
+    ports:
+      - 6380:6379
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/etc/redis/ #当前执行目录（包括配置文件）挂载到/etc/redis目录下
+      - ./redis/data/redis-master2:/data #redis数据挂载到宿主目录下，不指定工作目录，默认数据就存放在/data目录下　
+    command: redis-server /etc/redis/redis-6380.conf
+  redis-master3:
+    container_name: redis-master3
+    image: redis
+    restart: always
+    networks:
+      extnetwork:
+        ipv4_address: 172.17.0.4
+    ports:
+      - 6381:6379
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/etc/redis/
+      - ./redis/data/redis-master3:/data
+    command: redis-server /etc/redis/redis-6381.conf
+  redis-slave1:
+    container_name: redis-slave1
+    image: redis
+    restart: always
+    networks:
+      extnetwork:
+        ipv4_address: 172.17.0.5
+    ports:
+      - 6389:6379
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/etc/redis/
+      - ./redis/data/redis-slave1:/data
+    command: redis-server /etc/redis/redis-6389.conf
+    depends_on:
+      - redis-master1
+  redis-slave2:
+    container_name: redis-slave2
+    image: redis
+    restart: always
+    networks:
+      extnetwork:
+        ipv4_address: 172.17.0.6
+    ports:
+      - 6390:6379
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/etc/redis/
+      - ./redis/data/redis-slave2:/data
+    command: redis-server /etc/redis/redis-6390.conf
+    depends_on:
+      - redis-master2
+  redis-slave3:
+    container_name: redis-slave3
+    image: redis
+    restart: always
+    networks:
+      extnetwork:
+        ipv4_address: 172.17.0.7
+    ports:
+      - 6391:6379
+    stdin_open: true
+    tty: true
+    privileged: true
+    volumes:
+      - ./:/etc/redis/
+      - ./redis/data/redis-slave3:/data
+    command: redis-server /etc/redis/redis-6391.conf
+    depends_on:
+      - redis-master2
+
+

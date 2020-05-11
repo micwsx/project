@@ -1,0 +1,18 @@
+version: '2'
+services:
+  nginx:
+    container_name: boot-nginx
+    image: nginx
+    restart: always
+    ports:
+      - 80:80
+    privileged: true
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+  bootdemo:
+    restart: always
+    image: 192.168.1.111:5000/bootdemo2
+    expose:
+      - 8090
+    depends_on:
+      - nginx

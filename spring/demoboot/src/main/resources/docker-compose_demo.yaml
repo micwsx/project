@@ -1,0 +1,53 @@
+
+version: '3'
+
+services:
+
+  redis-server-master:
+    image: redis
+    container_name: redis-server-master
+    restart: always
+    ports:
+      - 6379:6379
+    networks:
+      redis-cluster:
+        ipv4_address: 10.1.0.2
+    environment:
+      TZ: "Asia/Shanghai"
+    volumes:
+
+      - ./redis-master.conf:/usr/local/etc/redis/redis.conf
+      - ../data/redis-master:/data
+    sysctls:
+
+      net.core.somaxconn: '511'
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+  # 从节点1的容器
+  redis-server-slave-1:
+    image: redis
+    container_name: redis-server-slave-1
+    restart: always
+    depends_on:
+      - redis-server-master
+    ports:
+      - 6380:6380
+    networks:
+      redis-cluster:
+        ipv4_address: 10.1.0.3
+    environment:
+      TZ: "Asia/Shanghai"
+    volumes:
+      - ./redis-slave1.conf:/usr/local/etc/redis/redis.conf
+      - ../data/redis-slave-1:/data
+    sysctls:
+      net.core.somaxconn: '511'
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+
+networks:
+  redis-cluster:
+    # IP Address Management
+    ipam:
+      config:
+        # 为容器分配一个独立的子网，用来方便为容器指定静态IP
+        # 使用独立的子网可以避免IP地址冲突的问题
+        - subnet: 10.1.0.0/16

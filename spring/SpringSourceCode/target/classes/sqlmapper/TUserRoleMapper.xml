@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.enjoy.dao.TUserRole">
+
+	
+	<insert id="add">
+		INSERT INTO userrole(userId,roleId)
+		VALUES(#{userId,jdbcType=INTEGER},#{roleId,jdbcType=INTEGER})
+	</insert>
+
+	<insert id="addRolesForUser">
+		INSERT INTO userrole(userId,roleId)
+		VALUES
+		<foreach collection="array" separator="," item="roleId" >
+			(#{userId,jdbcType=INTEGER},#{roleId,jdbcType=INTEGER})
+		</foreach>
+	</insert>
+	
+	<insert id="removeRolesForUser">
+		DELETE FROM userrole
+		WHERE userId=#{userId,jdbcType=INTEGER} AND roleId in
+		<foreach collection="array" open="(" close=")" separator="," item="roleId" >
+			#{roleId,jdbcType=INTEGER}
+		</foreach>
+	</insert>
+	
+	
+	<delete id="deleteByUserId" parameterType="int">
+		DELETE FROM userrole WHERE userId=#{userId,jdbcType=INTEGER};
+	</delete>
+	
+	<delete id="deleteByRoleId" parameterType="int">
+		DELETE FROM userrole WHERE roleId=#{roleId,jdbcType=INTEGER};
+	</delete>
+	
+</mapper>

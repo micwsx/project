@@ -1,0 +1,6 @@
+#jdk8环境镜像
+FROM openjdk:8
+ADD ["demo-0.0.1-SNAPSHOT.jar","demo.jar"]
+EXPOSE 8090
+#入口命令启动jar
+ENTRYPOINT ["java","-jar","/demo.jar"]
