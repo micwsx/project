@@ -15,7 +15,7 @@ public class HelloWorldController {
 
     @GetMapping("/")
     public ModelAndView info() throws Exception {
-        String  localhostAddress= InetAddress.getLocalHost().getHostAddress().toString();
+        String localhostAddress= InetAddress.getLocalHost().getHostAddress().toString();
         ModelAndView modelAndView=new ModelAndView("info");
         Optional<Inet4Address> ipAddress=getLocalIpAddress();
         modelAndView.addObject("localhostAddress",localhostAddress);

@@ -9,7 +9,6 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import javax.sql.DataSource;
 
 @SpringBootApplication
-@EnableConfigurationProperties(DataSourceConfiguration.class)
 public class DemoApplication {
 
     public static void main(String[] args) {

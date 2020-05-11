@@ -1,18 +1,25 @@
 package com.enjoy.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.support.http.StatViewServlet;
+import com.alibaba.druid.support.http.WebStatFilter;
+import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
+import java.beans.PropertyVetoException;
 import java.sql.SQLException;
 
 @Configuration
-@ConfigurationProperties(prefix = "spring.druid",ignoreInvalidFields = true)
 public class DataSourceConfiguration {
 
     private String driverClassName;
@@ -20,28 +27,42 @@ public class DataSourceConfiguration {
     private String username;
     private String password;
 
-
     @Autowired
     private Environment env;
 
     @Bean
-    public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(env.getProperty("spring.datasource.driver-class-name"));
-        dataSource.setUrl(env.getProperty("spring.datasource.url"));
-        dataSource.setUsername(env.getProperty("spring.datasource.username"));
-        dataSource.setPassword(env.getProperty("spring.datasource.password"));
-        return dataSource;
+    public DataSource cp30DataSource() {
+        ComboPooledDataSource comboPooledDataSource = new ComboPooledDataSource();
+        try {
+            comboPooledDataSource.setDriverClass(env.getProperty("spring.datasource.driver-class-name"));
+            comboPooledDataSource.setJdbcUrl(env.getProperty("spring.datasource.url"));
+            comboPooledDataSource.setUser(env.getProperty("spring.datasource.username"));
+            comboPooledDataSource.setPassword(env.getProperty("spring.datasource.password"));
+            comboPooledDataSource.setMinPoolSize(Integer.parseInt(env.getProperty("spring.datasource.minPoolSize")));
+            comboPooledDataSource.setMaxPoolSize(Integer.parseInt(env.getProperty("spring.datasource.maxPoolSize")));
+            comboPooledDataSource.setMaxIdleTime(Integer.parseInt(env.getProperty("spring.datasource.maxIdleTime")));
+            comboPooledDataSource.setAcquireIncrement(Integer.parseInt(env.getProperty("spring.datasource.acquireIncrement")));
+            comboPooledDataSource.setMaxStatements(Integer.parseInt(env.getProperty("spring.datasource.maxStatements")));
+            comboPooledDataSource.setInitialPoolSize(Integer.parseInt(env.getProperty("spring.datasource.initialPoolSize")));
+            comboPooledDataSource.setIdleConnectionTestPeriod(Integer.parseInt(env.getProperty("spring.datasource.idleConnectionTestPeriod")));
+            comboPooledDataSource.setAcquireRetryAttempts(Integer.parseInt(env.getProperty("spring.datasource.acquireRetryAttempts")));
+            comboPooledDataSource.setBreakAfterAcquireFailure(Boolean.parseBoolean(env.getProperty("spring.datasource.breakAfterAcquireFailure")));
+            comboPooledDataSource.setTestConnectionOnCheckout(Boolean.parseBoolean(env.getProperty("spring.datasource.testConnectionOnCheckout")));
+            comboPooledDataSource.setAcquireRetryDelay(Integer.parseInt(env.getProperty("spring.datasource.acquireRetryDelay")));
+        } catch (PropertyVetoException e) {
+            e.printStackTrace();
+        }
+        return comboPooledDataSource;
     }
 
 //    @Bean(initMethod = "init", destroyMethod = "close")
     @Bean
     public DruidDataSource druidDataSource() throws SQLException {
         DruidDataSource dataSource = new DruidDataSource();
-        dataSource.setDriverClassName(driverClassName);
-        dataSource.setUrl(slaveUrl);
-        dataSource.setUsername(username);
-        dataSource.setPassword(password);
+        dataSource.setDriverClassName(env.getProperty("spring.druid.driverClassName"));
+        dataSource.setUrl(env.getProperty("spring.druid.slaveUrl"));
+        dataSource.setUsername(env.getProperty("spring.druid.username"));
+        dataSource.setPassword(env.getProperty("spring.druid.password"));
         // 配置初始化大小、最小、最大
         dataSource.setInitialSize(10);
         dataSource.setMinIdle(1);
@@ -61,6 +82,5 @@ public class DataSourceConfiguration {
         dataSource.setFilters("stat,wall");
         return dataSource;
     }
-
 
 }
