@@ -22,6 +22,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!--排除Tomcat启动器，如果用jetty需要排除，如果要打包(war)部署到服务器需要排除内置Tomcat -->
+            <!--<exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>-->
         </dependency>
         <!--https://www.cnblogs.com/msi-chen/p/10974009.html-->
         <dependency>
@@ -29,6 +36,12 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!--mybatis-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -51,23 +64,19 @@
             <artifactId>druid</artifactId>
             <version>1.0.20</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
-
-        <!--redis启动器
+        <!--redis启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>-->
-        <!--mongodb启动器
+        </dependency>
+
+        <!--mongodb启动器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
-        </dependency>-->
+        </dependency>
 
+        <!--热部署-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -75,10 +84,11 @@
             <optional>true</optional>
         </dependency>
 
-  <!--      <dependency>
+        <!--monitor and manage the application by using HTTP or with JMX-->
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>-->
+        </dependency>
 
         <!--swagger-->
         <dependency>
@@ -91,17 +101,29 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
         </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
+            <!--热部署-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.enjoy.DemoApplication</mainClass>
+                    <fork>true</fork>
+                </configuration>
             </plugin>
 
-            <!--<plugin>
+            <!-- springboot项目docker化,机器上需要安装docker
+             1. zip整个工程,注意dockerfile在工程的根目录下
+             2. 放到linux中解压zip工程文件
+             3. 进入target/docker文件夹
+             4. 创建镜像执行命令docker build -t [镜像名] .
+             5. 创建容器 docker run - -name [别名] -d -p 8090:8090 [镜像名] -->
+
+            <!--
+            <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>

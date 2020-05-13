@@ -6,6 +6,8 @@ import com.enjoy.model.User;
 import com.enjoy.service.dao.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,6 +17,7 @@ import java.util.List;
 @Service
 @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 // @Scope(value="Michael")
+//@CacheConfig(cacheNames = "user")
 public class UserServiceImp implements UserService {
 
 	@Autowired
@@ -23,8 +26,10 @@ public class UserServiceImp implements UserService {
 	@Autowired
 	private TUserRole userRoleMapper;
 
+	@Cacheable(value = "user",keyGenerator = "cacheKeyGenerator")
 	@Override
 	public List<User> selectAll() {
+		System.out.println("数据库中查找所有用户！！！");
 		return userMapper.selectAll();
 	}
 
@@ -62,8 +67,10 @@ public class UserServiceImp implements UserService {
 		return userRoleMapper.removeRolesForUser(userId, roles);
 	}
 
+	@Cacheable(value = "user",key = "#id")
 	@Override
 	public User selectById(int id) {
+		System.out.println("数据库中查找userId="+id+"!!!");
 		return userMapper.selectById(id);
 	}
 

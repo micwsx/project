@@ -1,11 +1,18 @@
 package com.enjoy.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
 import java.util.List;
 
+// mongodb操作时@Document注解不是必须的。默认就是类名称
+@Document(collection = "users")
 public class User {
 
-	
+	@Id
 	private Integer id;
+	@Field
 	private String userName;
 	private boolean sex;
 	private String remark;
