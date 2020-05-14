@@ -1,13 +1,26 @@
 package com.enjoy.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+import org.springframework.data.mongodb.core.mapping.FieldType;
+import org.springframework.data.mongodb.core.mapping.MongoId;
+
 import java.util.List;
 
+@Document(collection = "users")
 public class User {
 
-	
+	// @Id
+	@MongoId
+//	@MongoId(FieldType.OBJECT_ID)
 	private Integer id;
+
+	@Field
 	private String userName;
+
 	private boolean sex;
+
 	private String remark;
 	
 	private List<Role> roles;

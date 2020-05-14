@@ -1,0 +1,22 @@
+
+>>>>>>>>>>>>>>>>>>>>>>>>>本地代码上传github远程仓库
+git init
+git add -A
+git commit -m ""
+
+git remote add origin <url> #关联本地仓库与远程仓库
+git pull --rebase origin master
+git push -u origin master
+git push orign master
+>>>>>>>>>>>>>>>>>>>>>>>>>Tomcat8.5.55 配置SSL
+1.自签名证书命令：keytool -genkey -alias tomcat -keyalg RSA -keystore tomcat.keystore
+2.server.xml
+<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+           maxThreads="150" SSLEnabled="true">
+    <SSLHostConfig>
+        <Certificate
+        certificateKeystoreFile="C:\Program Files\Java\jdk1.8.0_91\bin\tomcat.keystore"
+        certificateKeystoreType="JKS" certificateKeystorePassword="123456" type="RSA"/>
+    </SSLHostConfig>
+</Connector>
+3.测试访问地址 https://localhost:8443/xxx
