@@ -1,7 +1,6 @@
 package com.enjoy.debris.aop;
 
 
-import com.enjoy.debris.customAnnotation.MyAnnotation;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -26,14 +25,16 @@ public class LogAdvice {
 
 
     @Around(value = "@annotation(myAnnotation)")
-    public Object myAround(ProceedingJoinPoint proceedingJoinPoint, MyAnnotation myAnnotation) throws Throwable{
-       System.out.println("-------------1.LogAdvice.myAround()---------------");
-       Method method=((MethodSignature)proceedingJoinPoint.getSignature()).getMethod();
-       String argValue=getKey(myAnnotation.name(),method,proceedingJoinPoint.getArgs());
-       System.out.println("表达式："+myAnnotation.name()+"　参数值:"+argValue);
-       Object result = proceedingJoinPoint.proceed();
-       System.out.println("-------------2.LogAdvice.myAround()---------------"+result);
-       return result;
+    public Object myAround(ProceedingJoinPoint proceedingJoinPoint, MyAnnotation myAnnotation) throws Throwable {
+        System.out.println("-------------1.LogAdvice.myAround()---------------");
+//        Method method = ((MethodSignature) proceedingJoinPoint.getSignature()).getMethod();
+//        String argValue = getKey(myAnnotation.exp(), method, proceedingJoinPoint.getArgs());
+//        System.out.println("表达式：" + myAnnotation.exp() + "　参数值:" + argValue);
+        System.out.println("执行目标方法");
+        Object result = proceedingJoinPoint.proceed();
+        System.out.println("结果为：" + result);
+        System.out.println("-------------2.LogAdvice.myAround()---------------");
+        return result;
     }
 
     // 核心逻辑调用异常退出后，执行。
@@ -47,7 +48,7 @@ public class LogAdvice {
     public Object around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         System.out.println("-------------1.LogAdvice.around()---------------");
         Object result = proceedingJoinPoint.proceed();
-        System.out.println("-------------2.LogAdvice.around()---------------"+result);
+        System.out.println("-------------2.LogAdvice.around()---------------" + result);
         return result;
     }
 
@@ -69,19 +70,19 @@ public class LogAdvice {
     }
 
 
-    private String getKey(String exp,Method method,Object[] args){
-      // 获取参数名
-        LocalVariableTableParameterNameDiscoverer localVariableTableParameterNameDiscoverer=new LocalVariableTableParameterNameDiscoverer();
-        String[] argNames=localVariableTableParameterNameDiscoverer.getParameterNames(method);
-        SpelExpressionParser parser=new SpelExpressionParser();
-        Expression expression=parser.parseExpression(exp,new TemplateParserContext());
-        if (args.length<=0){
-            return  null;
+    private String getKey(String exp, Method method, Object[] args) {
+        // 获取参数名
+        LocalVariableTableParameterNameDiscoverer localVariableTableParameterNameDiscoverer = new LocalVariableTableParameterNameDiscoverer();
+        String[] argNames = localVariableTableParameterNameDiscoverer.getParameterNames(method);
+        SpelExpressionParser parser = new SpelExpressionParser();
+        Expression expression = parser.parseExpression(exp, new TemplateParserContext());
+        if (args.length <= 0) {
+            return null;
         }
-        EvaluationContext context=new StandardEvaluationContext();
+        EvaluationContext context = new StandardEvaluationContext();
         for (int i = 0; i < args.length; i++) {
-            context.setVariable(argNames[i],args[i]);
+            context.setVariable(argNames[i], args[i]);
         }
-        return expression.getValue(context,String.class);
+        return expression.getValue(context, String.class);
     }
 }

@@ -1,6 +1,8 @@
 package com.enjoy.controller;
 
+import com.enjoy.model.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
@@ -13,7 +15,8 @@ import java.net.URLClassLoader;
 public class UserController {
 
     @RequestMapping("/info")
-    public @ResponseBody String info() {
+    public @ResponseBody
+    String info() {
         URLClassLoader systemClassLoader = (URLClassLoader) ClassLoader.getSystemClassLoader();
         URL[] urLs = systemClassLoader.getURLs();
         for (URL url : urLs) {
@@ -31,12 +34,19 @@ public class UserController {
     }
 
     @RequestMapping("/home")
-    public ModelAndView print(){
-        ModelAndView modelAndView=new ModelAndView("cors");
+    public ModelAndView print() {
+        ModelAndView modelAndView = new ModelAndView("cors");
         modelAndView.addObject("name", "Michael");
         return modelAndView;
     }
 
+
+    @ResponseBody
+    @RequestMapping("/info/{id}")
+    public User json(@PathVariable(name = "id") Integer id) {
+        User user = new User(id, "Michael", true, "Test");
+        return user;
+    }
 
 
 }
