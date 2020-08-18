@@ -3,18 +3,22 @@ package com.enjoy.debris.scope;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.config.Scope;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Ape implements Scope {
 
-    private ThreadLocal<Object> threadLocal=new ThreadLocal<>();
+    private Map<String, ThreadLocal<Object>> threadLocalMap = new HashMap();
 
     @Override
     public Object get(String name, ObjectFactory<?> objectFactory) {
-
-        if (threadLocal.get()!=null){
-            return  threadLocal.get();
-        }else{
-            Object bean=objectFactory.getObject();
-            threadLocal.set(bean);
+        if (threadLocalMap.get(name) != null) {
+            return threadLocalMap.get(name).get();
+        } else {
+            Object bean = objectFactory.getObject();
+            ThreadLocal<Object> obj = new ThreadLocal<>();
+            obj.set(objectFactory.getObject());
+            threadLocalMap.put(name, obj);
             return bean;
         }
     }

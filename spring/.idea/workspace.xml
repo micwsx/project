@@ -2,30 +2,314 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SpringSourceCode:war" />
+      <artifact name="SpringSourceCode:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dcaeee3-cc22-4f8d-9679-84d6f306b35d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/ApiController.java" afterDir="false" />
+    <list default="true" id="3dcaeee3-cc22-4f8d-9679-84d6f306b35d" name="Default Changelist" comment="integrate ssl, profile, docker, redis as cache, mongodb, actuator, swagger in springboot project.&#10;                                    integrate mongodb in spring project.">
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/controller/CustomEditorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/BeanOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/BeanTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/scope/DependScopeBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/ResearchStartup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/domain/B_Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/domain/B_User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/event/BlackEmailNotifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/event/BlackEmailNotifier2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/event/BlackListEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/event/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/event/MultiEventNotifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/BestPriceFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/CompletableFutureElaboration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/CustomExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/Discount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/PipelineAsynchronousTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/Quote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/ImproveCodeFlexibility/ExecuteAround.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/ImproveCodeFlexibility/FactoryTolambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/ImproveCodeFlexibility/ImproveCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/CaloricLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/Prelude.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/PrimeNumberCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/ReducingAndSummarizing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/ToListCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/defaultMethod/DefaultInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/optional/OptionalFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/optional/OptionalProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/optional/RedefiningPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/ForkJoinSumCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/ParallelStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/Spliterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/WordCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/WordCounterSpliterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/refactor/AnnoymousToLambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/refactor/ImperativeToStreams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/refactor/LambdaToMethodReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/BuildingStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/MenuDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/NumericStreams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/Trader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/TraderAndTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/testing/Debugger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/testing/Logging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/testing/Testinglambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/mvc/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/spel/Evaluation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/spel/FieldValueTestBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/spel/Inventor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/spel/PlaceOfBirth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/spel/language/ExpressionPlayground.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/validation/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/validation/PersonValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/validation/propertyEditor/Something.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/validation/propertyEditor/SomethingEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/resources/i18n/message_en_US.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/resources/i18n/message_zh_CN.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/test/java/anatomy/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/test/java/anatomy/defaultValueMethod/ClassWithDefautMethodValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/test/java/anatomy/defaultValueMethod/TestDefaultValueMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/test/java/anatomy/metadata/MetadataUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/test/java/anatomy/metadata/Michael.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/test/java/anatomy/metadata/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/test/java/anatomy/metadata/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringSourceCode/src/test/java/segment/SpringResearchWithAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/BeanMetadataAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/BeanMetadataAttributeAccessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/BeanMetadataElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/Mergeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/MutablePropertyValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/PropertyValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/PropertyValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/annotation/AnnotatedBeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/config/BeanDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/beans/config/ConstructorArgumentValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/AttributeAccessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/AttributeAccessorSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/GraalDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/NestedExceptionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/NestedRuntimeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/ResolvableType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/SerializableTypeWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/AnnotationAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/AnnotationConfigurationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/AnnotationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/AttributeMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/MergedAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/MergedAnnotationCollectors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/MergedAnnotationPredicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/MergedAnnotationSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/MergedAnnotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/PackageAnnotatioinFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/RepeatableContainers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/annotation/TypeMappedAnnotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/lang/NonNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/lang/Nullable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/type/AnnotatedTypeMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/type/AnnotationMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/type/ClassMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/util/Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/util/CollectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/util/LinkedMultiValueMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/util/MultiValueMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/util/ObjectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/util/ReflectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/main/java/com/spring/core/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/test/java/com/spring/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/test/java/com/spring/superAndExtend/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/test/java/com/spring/superAndExtend/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anatomy/src/test/java/com/spring/superAndExtend/Plate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/SpringSourceCode_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringSourceCode_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_2_14_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_21.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_9_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpringSourceCode/SpringSourceCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/SpringSourceCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demoboot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/HelloWorldController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demoboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demoboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/controller/MongoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/controller/MongoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/TestSpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/TestSpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/scope/Ape.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/scope/Ape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/startup/config/SpringContainerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/startup/config/SpringContainerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/dynamicproxy/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/dynamicproxy/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode.war" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/advisors/DataSourceSwitchAdvisor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/advisors/DataSourceSwitchAdvisor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/DataSourceConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/DataSourceConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/DataSourceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/DataSourceHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/DynamicDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/DynamicDataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/FinishEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/FinishEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/GlobalCacheConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/GlobalCacheConfiguration$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/GlobalCacheConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/GlobalCacheConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/GlobalTransactionConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/GlobalTransactionConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/MyBatisConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/MyBatisConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/redis/RedisCache$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/redis/RedisCache$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/redis/RedisCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/redis/RedisCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/redis/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/config/redis/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/dao/TRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/dao/TRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/dao/TUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/dao/TUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/dao/TUserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/dao/TUserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/aop/AOPConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/aop/AOPConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/aop/LogAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/aop/LogAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/bean/FactoryBeanUsage$CustomerClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/bean/FactoryBeanUsage$CustomerClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/bean/FactoryBeanUsage.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/bean/FactoryBeanUsage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/bean/SingletonBean$PrototypBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/bean/SingletonBean$PrototypBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/bean/SingletonBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/bean/SingletonBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/CacheConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/CacheConfiguration$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/CacheConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/CacheConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/CacheService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/CacheService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/RedisCache$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/RedisCache$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/RedisCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/RedisCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/TestCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/TestCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/cache/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/customAnnotation/MyAnnotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/datasource/DataSourceConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/datasource/DataSourceConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/filter/MyCorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/filter/MyCorsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/interceptors/MyInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/interceptors/MyInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/scope/Ape.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/scope/Ape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/scope/ScopeBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/scope/ScopeBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/scope/ScopeBeanFactoryPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/scope/ScopeBeanFactoryPostProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/spi/SPIService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/spi/SPIService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/spi/SPIServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/spi/SPIServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/spi/SPIServiceImp2.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/spi/SPIServiceImp2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/spi/SPITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/spi/SPITest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/transaction/TestTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/transaction/TestTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/transaction/TransactionConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/transaction/TransactionConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/transaction/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/debris/transaction/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/service/dao/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/service/dao/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/service/dao/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/service/dao/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/service/imp/RoleServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/service/imp/RoleServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/service/imp/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/enjoy/service/imp/UserServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/startup/config/AnnotationStartup.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/startup/config/AnnotationStartup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/startup/config/SpringContainerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/startup/config/SpringContainerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/startup/config/SpringMVCConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/com/startup/config/SpringMVCConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/mongodb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/classes/mongodb.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/c3p0-0.9.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/jackson-annotations-2.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/jackson-core-2.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/jackson-databind-2.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/jcl-over-slf4j-1.7.21.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/mchange-commons-java-0.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/mongo-java-driver-2.14.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/spring-data-commons-1.12.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/SpringSourceCode/WEB-INF/lib/spring-data-mongodb-1.9.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/advisors/DataSourceSwitchAdvisor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/advisors/DataSourceSwitchAdvisor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/DataSourceConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/DataSourceConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/DataSourceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/DataSourceHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/DynamicDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/DynamicDataSource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/FinishEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/FinishEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/GlobalCacheConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/GlobalCacheConfiguration$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/GlobalCacheConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/GlobalCacheConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/GlobalTransactionConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/GlobalTransactionConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/MyBatisConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/MyBatisConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/redis/RedisCache$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/redis/RedisCache$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/redis/RedisCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/redis/RedisCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/redis/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/config/redis/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/dao/TRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/dao/TRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/dao/TUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/dao/TUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/dao/TUserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/dao/TUserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/aop/AOPConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/aop/AOPConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/aop/LogAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/aop/LogAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/bean/FactoryBeanUsage$CustomerClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/bean/FactoryBeanUsage$CustomerClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/bean/FactoryBeanUsage.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/bean/FactoryBeanUsage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/bean/SingletonBean$PrototypBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/bean/SingletonBean$PrototypBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/bean/SingletonBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/bean/SingletonBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/CacheConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/CacheConfiguration$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/CacheConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/CacheConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/CacheService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/CacheService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/RedisCache$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/RedisCache$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/RedisCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/RedisCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/TestCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/TestCache.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/cache/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/customAnnotation/MyAnnotation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/datasource/DataSourceConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/datasource/DataSourceConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/filter/MyCorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/filter/MyCorsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/interceptors/MyInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/interceptors/MyInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/scope/Ape.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/scope/Ape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/scope/ScopeBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/scope/ScopeBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/scope/ScopeBeanFactoryPostProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/scope/ScopeBeanFactoryPostProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/spi/SPIService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/spi/SPIService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/spi/SPIServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/spi/SPIServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/spi/SPIServiceImp2.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/spi/SPIServiceImp2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/spi/SPITest.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/spi/SPITest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/transaction/TestTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/transaction/TestTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/transaction/TransactionConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/transaction/TransactionConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/transaction/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/debris/transaction/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/service/dao/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/service/dao/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/service/dao/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/service/dao/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/service/imp/RoleServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/service/imp/RoleServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/service/imp/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/enjoy/service/imp/UserServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/startup/config/AnnotationStartup.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/startup/config/AnnotationStartup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/startup/config/SpringContainerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/startup/config/SpringContainerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/startup/config/SpringMVCConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/com/startup/config/SpringMVCConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/classes/mongodb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/classes/mongodb.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/surefire-reports/TEST-segment.MyBatisTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/surefire-reports/TEST-segment.MyBatisTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/surefire-reports/TEST-segment.SpringJunitWithXmlTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/surefire-reports/TEST-segment.SpringJunitWithXmlTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/surefire-reports/segment.MyBatisTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/surefire-reports/segment.MyBatisTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/surefire-reports/segment.SpringJunitWithXmlTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/surefire-reports/segment.SpringJunitWithXmlTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/AfterMethodInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/AfterMethodInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/AfterReturningMethodInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/AfterReturningMethodInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/AfterThrowingMethodInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/AfterThrowingMethodInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/BeforeMethodInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/BeforeMethodInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/EnhanceAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/EnhanceAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/MethodInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/MethodInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/MethodInvocation.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/MethodInvocation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/PersonAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/aop/PersonAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/circulardependency/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/circulardependency/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/circulardependency/BeanFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/circulardependency/BeanFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/circulardependency/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/circulardependency/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/dynamicproxy/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/dynamicproxy/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/dynamicproxy/PersonAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/dynamicproxy/PersonAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/dynamicproxy/Staff.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/feature/dynamicproxy/Staff.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/segment/MyBatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/segment/MyBatisTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/segment/SpringJunitWithXmlTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/segment/SpringJunitWithXmlTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/segment/SpringUnitWithAnnotation.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringSourceCode/target/test-classes/segment/SpringUnitWithAnnotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/MyBatisConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/MyBatisConfiguration.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/SpringSourceCode/target/" />
     <ignored path="$PROJECT_DIR$/demoboot/target/" />
     <ignored path=".idea/" />
+    <ignored path="$PROJECT_DIR$/anatomy/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -44,13 +328,34 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spring" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceConfiguration.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/advisors/DataSourceSwitchAdvisor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
-              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="240">
+              <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/CacheConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/CorsConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,11 +363,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSource.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/anatomy/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="185">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -70,20 +375,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demoboot/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/Swagger2Config.java">
+        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -91,29 +402,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSourceConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="150">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/ApiController.java">
+        <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/MyBatisConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="830">
-              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demoboot/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/DataSourceConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="330">
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -124,6 +432,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -132,6 +444,18 @@
     <findStrings>
       <find>mybatis</find>
       <find>aop</find>
+      <find>connector</find>
+      <find>mongo</find>
+      <find>fastjson</find>
+      <find>messageConverters</find>
+      <find>returnValueHandlers</find>
+      <find>getAdvicesAndAdvisorsForBean</find>
+      <find>SqlSessionFactoryBean</find>
+      <find>setValue</find>
+      <find>Standard</find>
+      <find>flatMap</find>
+      <find>totalCalories</find>
+      <find>@Value</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,47 +464,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/resources/sqlmapper/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/MyBatisConfiguration.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/resources/sqlmapper/TRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/resources/sqlmapper/TUserMapper.xml" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/resources/sqlmapper/TUserRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/example/config/DataSourceConfiguration.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/example/config/MyBatisConfiguration.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/dynamicproxy/Person.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/dynamicproxy/Staff.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/aop/MethodInterceptor.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/aop/MethodInvocation.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/aop/AfterMethodInterceptor.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/dynamicproxy/PersonAdvice.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/aop/EnhanerAdvice.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/aop/PersonAdvice.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/aop/BeforeMethodInterceptor.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/aop/AfterThrowingMethodInterceptor.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/aop/AfterReturningMethodInterceptor.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/aop/Main.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/circulardependency/User.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/circulardependency/Account.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/circulardependency/Main.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/feature/circulardependency/BeanFactory.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/advisors/DataSourceSwitchAdvisor.java" />
-        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/GlobalTransactionConfiguration.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/MyBatisConfiguration.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/advisors/DataSourceSwitchAdvisor.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/ResearchStartup.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/spel/FieldValueTestBean.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/spel/PlaceOfBirth.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/spel/Inventor.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/spel/language/ExpressionPlayground.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/mvc/WebConfig.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/MenuDemo.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/Trader.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/Transaction.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/TraderAndTransaction.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/MenuDemo.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/Type.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/BuildingStream.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/Prelude.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/NumericStreams.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/CaloricLevel.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/ToListCollection.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/PrimeNumberCollector.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/collecting/ReducingAndSummarizing.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/ForkJoinSumCalculator.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/ParallelStream.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/WordCounter.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/WordCounterSpliterator.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/parallel/Spliterator.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/refactor/AnnoymousToLambda.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/Dish.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/refactor/LambdaToMethodReference.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/refactor/ImperativeToStreams.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/ImproveCodeFlexibility/ImproveCode.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/ImproveCodeFlexibility/ExecuteAround.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/ImproveCodeFlexibility/FactoryTolambda.java" />
         <option value="$PROJECT_DIR$/SpringSourceCode/pom.xml" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/HelloWorldController.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/resources/templates/api/index.html" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSource.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/DemoApplication.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSourceConfiguration.java" />
-        <option value="$PROJECT_DIR$/demoboot/pom.xml" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/Swagger2.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/ApiController.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/Swagger2Config.java" />
-        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceConfiguration.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/testinglambda.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/testing/testinglambda.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/testing/Testinglambda.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/testing/Debugger.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/testing/Logging.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/defaultMethod/DefaultInterface.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/optional/OptionalFeature.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/optional/RedefiningPerson.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/optional/OptionalProperties.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/CompletableFutureElaboration.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/BestPriceFinder.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/CustomExecutor.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/Shop.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/Quote.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/Discount.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/PipelineAsynchronousTask.java" />
+        <option value="$PROJECT_DIR$/SpringSourceCode/src/test/java/anatomy/Util.java" />
+        <option value="$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/MyBatisConfiguration.java" />
+        <option value="$PROJECT_DIR$/anatomy/pom.xml" />
       </list>
     </option>
   </component>
@@ -214,32 +548,28 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="SpringSourceCode Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,27 +610,31 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="enjoy" type="462c0819:PsiDirectoryNode" />
+              <item name="advisors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demoboot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="enjoy" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
             <path>
-              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demoboot" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="58d84e3e:PackageViewProjectNode" />
+              <item name="demo" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -317,18 +651,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.31954023" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.research.event" />
       <recent name="com.enjoy.advisors" />
       <recent name="com.enjoy.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WorkStation\Michael\idea_workplace\project\spring\SpringSourceCode\src\main\resources\i118n" />
+      <recent name="C:\WorkStation\Michael\idea_workplace\project\spring\SpringSourceCode" />
+      <recent name="C:\WorkStation\Michael\idea_workplace\project\spring\demoboot\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,30 +684,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DemoApplication">
-    <configuration name="BeanFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="feature.circulardependency.BeanFactory" />
+  <component name="RunManager" selected="Application.Util">
+    <configuration name="BestPriceFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.research.java8.CompletableFutureClass.BestPriceFinder" />
       <module name="SpringSourceCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="feature.circulardependency.Main" />
+    <configuration name="CompletableFutureElaboration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.research.java8.CompletableFutureClass.CompletableFutureElaboration" />
       <module name="SpringSourceCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.research.java8.CompletableFutureClass.CustomExecutor" />
+      <module name="SpringSourceCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="feature.aop.Main" />
       <module name="SpringSourceCode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonAdvice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="PersonAdvice" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="feature.dynamicproxy.PersonAdvice" />
+      <module name="SpringSourceCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PipelineAsynchronousTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.research.java8.CompletableFutureClass.PipelineAsynchronousTask" />
+      <module name="SpringSourceCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="anatomy.Util" />
       <module name="SpringSourceCode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -379,13 +741,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat7.0.69_Local" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.69" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\Program Files\Java\jdk1.8.0_211\jre">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/SpringSourceCode_war/" />
+    <configuration name="Tomcat8.5.55_Local" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.55" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\Program Files\Java\jdk1.8.0_91\jre">
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="SpringSourceCode:war">
+        <artifact name="SpringSourceCode:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/SpringSourceCode_war" />
+            <option name="CONTEXT_PATH" value="/SpringSourceCode_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -433,7 +795,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="SpringSourceCode:war" />
+          <artifact name="SpringSourceCode:war exploded" />
         </option>
       </method>
     </configuration>
@@ -487,53 +849,99 @@
     <list>
       <item itemvalue="Application.PersonAdvice" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.BeanFactory" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.CompletableFutureElaboration" />
+      <item itemvalue="Application.BestPriceFinder" />
+      <item itemvalue="Application.CustomExecutor" />
+      <item itemvalue="Application.PipelineAsynchronousTask" />
+      <item itemvalue="Application.Util" />
       <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="Tomcat Server.Tomcat7.0.69_Local" />
+      <item itemvalue="Tomcat Server.Tomcat8.5.55_Local" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BeanFactory" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.PersonAdvice" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Util" />
+        <item itemvalue="Application.PipelineAsynchronousTask" />
+        <item itemvalue="Application.CustomExecutor" />
+        <item itemvalue="Application.BestPriceFinder" />
+        <item itemvalue="Application.CompletableFutureElaboration" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\wu.COMPUTOP\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SpringUnitWithAnnotation_mongodbTest - 2020.05.13 at 16h 54m 59s.xml">
+      <configuration name="SpringUnitWithAnnotation.mongodbTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringUnitWithAnnotation_mongodbTest - 2020.05.13 at 16h 55m 28s.xml">
+      <configuration name="SpringUnitWithAnnotation.mongodbTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringUnitWithAnnotation_mongodbTest - 2020.05.13 at 17h 03m 40s.xml">
+      <configuration name="SpringUnitWithAnnotation.mongodbTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringUnitWithAnnotation_mongodbTest - 2020.05.14 at 11h 23m 25s.xml">
+      <configuration name="SpringUnitWithAnnotation.mongodbTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringResearchWithAnnotation_startupSpring - 2020.06.19 at 15h 50m 17s.xml">
+      <configuration name="SpringResearchWithAnnotation.startupSpring" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringResearchWithAnnotation_startupSpring - 2020.06.19 at 15h 52m 47s.xml">
+      <configuration name="SpringResearchWithAnnotation.startupSpring" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringResearchWithAnnotation_startupSpring - 2020.06.19 at 15h 55m 11s.xml">
+      <configuration name="SpringResearchWithAnnotation.startupSpring" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringResearchWithAnnotation_startupSpring - 2020.06.19 at 16h 41m 44s.xml">
+      <configuration name="SpringResearchWithAnnotation.startupSpring" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringResearchWithAnnotation_startupSpring - 2020.06.19 at 16h 50m 20s.xml">
+      <configuration name="SpringResearchWithAnnotation.startupSpring" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringResearchWithAnnotation_startupSpring - 2020.06.19 at 18h 10m 15s.xml">
+      <configuration name="SpringResearchWithAnnotation.startupSpring" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4857143" visible="true" weight="0.21215352" />
+      <window_info id="Structure" order="1" sideWeight="0.51428574" side_tool="true" weight="0.19296375" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Favorites" order="4" sideWeight="0.35488126" side_tool="true" weight="0.23560767" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.36222222" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27333334" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.13" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.086666666" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.22555555" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37666667" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.44444445" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5010661" side_tool="true" weight="0.5555556" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.36444443" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Problems" order="15" weight="0.27" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.2260128" />
       <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.16311301" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.18923241" />
+      <window_info anchor="right" id="Bean Validation" order="5" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
   </component>
@@ -575,359 +983,366 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="add configuration and monitor of druid.&#10;add swagger" />
+    <MESSAGE value="integrate ssl, profile, docker, redis as cache, mongodb, actuator, swagger in springboot project.&#10;integrate mongodb in spring project." />
+    <MESSAGE value="add .gitignore file in spring project." />
+    <MESSAGE value="Correct SSL and mongodb integration in spring project." />
+    <MESSAGE value="AOP - 添加Around通知方法示例。&#10;奇怪的问题是逐步找断点与不打断点执行的结果不同。" />
+    <MESSAGE value="integrate ssl, profile, docker, redis as cache, mongodb, actuator, swagger in springboot project.&#10;                                    integrate mongodb in spring project." />
+    <option name="LAST_COMMIT_MESSAGE" value="integrate ssl, profile, docker, redis as cache, mongodb, actuator, swagger in springboot project.&#10;                                    integrate mongodb in spring project." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.13.RELEASE/spring-webmvc-5.1.13.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.class</url>
+          <line>138</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.13.RELEASE/spring-webmvc-5.1.13.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.class</url>
+          <line>196</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.13.RELEASE/spring-webmvc-5.1.13.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/AbstractMessageConverterMethodProcessor.class</url>
+          <line>220</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.13.RELEASE/spring-webmvc-5.1.13.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestResponseBodyMethodProcessor.class</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.13.RELEASE/spring-web-5.1.13.RELEASE.jar!/org/springframework/web/method/support/HandlerMethodReturnValueHandlerComposite.class</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.13.RELEASE/spring-web-5.1.13.RELEASE.jar!/org/springframework/web/method/support/HandlerMethodReturnValueHandlerComposite.class</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.13.RELEASE/spring-web-5.1.13.RELEASE.jar!/org/springframework/web/method/support/HandlerMethodReturnValueHandlerComposite.class</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.13.RELEASE/spring-webmvc-5.1.13.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurationSupport.java</url>
+          <line>782</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.13.RELEASE/spring-webmvc-5.1.13.RELEASE-sources.jar!/org/springframework/web/servlet/HandlerExecutionChain.java</url>
+          <line>152</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.13.RELEASE/spring-webmvc-5.1.13.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java</url>
+          <line>1101</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <condition expression="beanName.equals(&quot;roleServiceImp&quot;)" language="JAVA" />
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.13.RELEASE/spring-beans-5.1.13.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class</url>
+          <line>377</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <condition expression="beanName.equals(&quot;roleServiceImp&quot;)" language="JAVA" />
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.class</url>
+          <line>155</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.class</url>
+          <line>179</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.class</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.class</url>
+          <line>246</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/aspectj/annotation/BeanFactoryAspectJAdvisorsBuilder.class</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/aspectj/annotation/ReflectiveAspectJAdvisorFactory.class</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/aspectj/annotation/BeanFactoryAspectJAdvisorsBuilder.class</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/aspectj/annotation/BeanFactoryAspectJAdvisorsBuilder.class</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/aspectj/annotation/BeanFactoryAspectJAdvisorsBuilder.class</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/aop/LogAdvice.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/aop/LogAdvice.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class</url>
+          <line>418</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.class</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.13.RELEASE/spring-aop-5.1.13.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.class</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/MyBatisConfiguration.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1.jar!/org/mybatis/spring/mapper/MapperScannerConfigurer.class</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.13.RELEASE/spring-context-5.1.13.RELEASE.jar!/org/springframework/context/annotation/AnnotatedBeanDefinitionReader.class</url>
+          <line>94</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/scope/Ape.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/scope/ScopeBean.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/BeanOne.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.13.RELEASE/spring-context-5.1.13.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
+          <line>374</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.13.RELEASE/spring-context-5.1.13.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
+          <line>247</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/stream/MenuDemo.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/ImproveCodeFlexibility/ExecuteAround.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>beanName.equals(&quot;roleServiceImp&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>clazz.getMethod(&quot;around&quot;, ProceedingJoinPoint.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>clazz.getMethod(&quot;around&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>dataSource.getUrl()</expression-string>
+        <expression-string>(100 - code.percentage)*0.1/100</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comboPooledDataSource.getJdbcUrl()</expression-string>
+        <expression-string>(100*0.1 - code.percentage)/100</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((DruidDataSource) druidDataSource).getUrl()</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>com.alibaba.druid.pool.DruidDataSource</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>dataSource</expression-string>
+        <expression-string>(100 - code.percentage)/100</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comboPooledDataSource</expression-string>
+        <expression-string>(100 - code.percentage)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>100 - code.percentage</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(100 - code.percentage) / 100</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((100 - code.percentage) / 100)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>price *((100 - code.percentage) / 100)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>price * (100 - code.percentage / 100)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>BuildingStream.class.getClassLoader().getResource(&quot;&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/service/dao/RoleService.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/ThreadFactory.java" />
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/CompletableFutureElaboration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="1202">
+          <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/GlobalTransactionConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        <state relative-caret-position="164">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getPriceAsync2#0;class#Shop#0" />
+            <element signature="method#getPriceAsync#0;class#Shop#0" />
+            <element signature="method#delay#0;class#Shop#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/startup/config/SpringContainerConfig.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/AbstractExecutorService.java" />
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/resources/t_mybatis.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/cache/TestCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/customAnnotation/MyAnnotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/cache/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/service/imp/RoleServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/cache/RedisCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#845#846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/cache/CacheConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="e#1453#1454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/aop/LogAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/MyBatisConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/advisors/DataSourceSwitchAdvisor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/DynamicDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/SpringSourceCode.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="67" column="19" lean-forward="true" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/filter/FilterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar!/org/springframework/web/bind/annotation/RestController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot/1.1.1/mybatis-spring-boot-1.1.1.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2089">
-          <caret line="81" column="19" lean-forward="true" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.1.1/mybatis-spring-boot-autoconfigure-1.1.1.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-starter/1.1.1/mybatis-spring-boot-starter-1.1.1.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/filter/MyCorsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/HelloWorldController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/resources/templates/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h1#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/resources/templates/api/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/resources/application.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter/2.2.5.RELEASE/spring-boot-starter-2.2.5.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="56" column="49" lean-forward="true" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-aop/2.2.5.RELEASE/spring-boot-starter-aop-2.2.5.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/advisors/DataSourceSwitchAdvisor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.2.4.RELEASE/spring-jdbc-5.2.4.RELEASE.jar!/org/springframework/jdbc/datasource/AbstractDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.2.4.RELEASE/spring-jdbc-5.2.4.RELEASE.jar!/org/springframework/jdbc/datasource/lookup/AbstractRoutingDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.4.RELEASE/spring-context-5.2.4.RELEASE.jar!/org/springframework/context/support/ApplicationContextAwareProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/DataSourceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.2.5.RELEASE/spring-boot-2.2.5.RELEASE.jar!/org/springframework/boot/context/properties/ConfigurationProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-maven-plugin/2.2.5.RELEASE/spring-boot-maven-plugin-2.2.5.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="99" column="40" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/CorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringSourceCode/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="201" column="25" lean-forward="true" selection-start-line="201" selection-start-column="25" selection-end-line="201" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.4.RELEASE/spring-context-5.2.4.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1473">
-          <caret line="595" column="20" lean-forward="true" selection-start-line="595" selection-start-column="20" selection-end-line="595" selection-end-column="20" />
+        <state relative-caret-position="-930">
+          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -935,85 +1350,346 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/BestPriceFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#SingleRequest#0;class#BestPriceFinder#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/MyBatisConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/CustomExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="840">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSource.java">
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/Discount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="83" column="20" lean-forward="true" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
+        <state relative-caret-position="210">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demoboot/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="-969">
+          <caret line="54" column="27" lean-forward="true" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar!/io/swagger/annotations/ApiImplicitParam.class">
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-aop/2.2.5.RELEASE/spring-boot-starter-aop-2.2.5.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        <state relative-caret-position="450">
+          <caret line="54" column="17" lean-forward="true" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/PipelineAsynchronousTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/TestSpringConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/dao/TUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/resources/sqlmapper/TUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/resources/templates/api/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/controller/ApiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="830">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="510">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/filter/FilterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/interceptors/MyInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/startup/config/SpringMVCConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/filter/MyCorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/research/java8/CompletableFutureClass/Quote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSourceConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/test/java/anatomy/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="330">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/Swagger2Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        <state relative-caret-position="284">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/DataSourceHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/DynamicDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/FinishEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/GlobalCacheConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/GlobalTransactionConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/MyBatisConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/BeanConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/BeanOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/BeanTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/FactoryBeanUsage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/SingletonBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.5.RELEASE/spring-boot-autoconfigure-2.2.5.RELEASE.jar!/org/springframework/boot/autoconfigure/context/ConfigurationPropertiesAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/debris/bean/UserServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DynamicDataSourceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/MyBatisConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringSourceCode/src/main/java/com/enjoy/config/DataSourceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/advisors/DataSourceSwitchAdvisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/CacheConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/CorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoboot/src/main/java/com/enjoy/config/DataSourceConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/anatomy/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="185">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1035,7 +1711,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Spring (SpringSourceCode)|Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1050,7 +1726,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.31954023" />
               </list>
             </option>
           </splitter-proportions>
@@ -1062,7 +1738,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.31954023" />
               </list>
             </option>
           </splitter-proportions>
@@ -1070,12 +1746,23 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SpringSourceCode</last-edited>
+          <last-edited>demo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.31954023" />
-                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>

@@ -8,7 +8,6 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
-
 @Component
 @MapperScan("com.enjoy.dao")
 public class MyBatisConfiguration {

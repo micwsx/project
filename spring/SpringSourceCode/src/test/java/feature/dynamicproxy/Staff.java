@@ -1,6 +1,7 @@
 package feature.dynamicproxy;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Staff implements Person {
 
@@ -13,7 +14,7 @@ public class Staff implements Person {
     @Override
     public BigDecimal orderFood(String food) {
         System.out.println(this.name+" ordered "+food+"!");
-        return new BigDecimal(99.8);
+        return new BigDecimal(99.8).setScale(2, RoundingMode.DOWN);
     }
 }
 

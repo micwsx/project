@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
                 @ComponentScan.Filter(type = FilterType.ANNOTATION, value = Controller.class),
                 @ComponentScan.Filter(type = FilterType.REGEX, pattern = "com.enjoy.debris.*")
         })
-@EnableCaching
+//@EnableCaching
 @EnableAspectJAutoProxy
 @EnableTransactionManagement
 public class SpringContainerConfig {

@@ -22,6 +22,4 @@ public class MongoController {
         mongoTemplate.insert(user);
         return user;
     }
-
-
 }
