@@ -20,7 +20,7 @@ public class Plate<T extends Fruit> {
     }
 
     public static void main(String[] args) {
-        //Plate<Fruit> plate=new Plate<Apple>(new Apple());// 这样写报错
+//        Plate<Fruit> plate=new Plate<Apple>(new Apple());// 这样写报错
         Plate<Apple> plate = new Plate<Apple>(new Apple());
         //Plate<Fruit> plate = new Plate<Fruit>(new Apple());
         plate.setItem(new Apple());

@@ -28,6 +28,24 @@ public class BestPriceFinder {
 //       SingleRequest();
     }
 
+
+
+
+    public static List<String> findPricesAsyn2(List<Shop> shops, String product) {
+        ExecutorService executorService = Executors.newFixedThreadPool(Math.min(shops.size(), 100), r -> {
+            Thread thread = new Thread(r);
+            thread.setDaemon(true);
+            return thread;
+        });
+        List<CompletableFuture<String>> completableFutureList = shops.stream()
+                .map(shop -> CompletableFuture.supplyAsync(() -> shop.getName() + " price:" + shop.getPrice(product), executorService))
+                .collect(Collectors.toList());
+        return completableFutureList.stream()
+                .map(CompletableFuture::join)
+                .collect(Collectors.toList());
+    }
+
+
     public static List<String> findPricesAsynJoin(List<Shop> shops, String product) {
         List<CompletableFuture<String>> pricesAsyn = findPricesAsyn(shops, product);
         return pricesAsyn.stream().map(CompletableFuture::join).collect(Collectors.toList());
@@ -35,14 +53,16 @@ public class BestPriceFinder {
 
     // 并行异步执行find all prices
     public static List<CompletableFuture<String>> findPricesAsyn(List<Shop> shops, String product) {
-        List<CompletableFuture<String>> list = shops.stream().map(shop -> CompletableFuture.supplyAsync(() -> String.format("%s price is %.2f", shop.getName(), shop.getPrice(product))))
+        List<CompletableFuture<String>> list = shops.stream()
+                .map(shop -> CompletableFuture.supplyAsync(() -> String.format("%s price is %.2f", shop.getName(), shop.getPrice(product))))
                 .collect(Collectors.toList());
         return list;
     }
 
     // 并行执行find all prices
     public static List<String> findPricesParallelStream(List<Shop> shops, String product) {
-        List<String> list = shops.parallelStream().map(shop -> String.format("%s price is %.2f", shop.getName(), shop.getPrice(product)))
+        List<String> list = shops.parallelStream()
+                .map(shop -> String.format("%s price is %.2f", shop.getName(), shop.getPrice(product)))
                 .collect(Collectors.toList());
         return list;
     }

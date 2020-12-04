@@ -28,6 +28,7 @@ public class PipelineAsynchronousTask {
                 .map(shop -> CompletableFuture.supplyAsync(() -> shop.getPriceWithCode(product)))
                 .map(future -> future.thenApply(Quote::parse))
                 .map(future -> future.thenCompose(quote -> CompletableFuture.supplyAsync(() -> Discount.applyDiscount(quote))))
+                // .toArray(size -> new CompletableFuture[size]);
                 .collect(Collectors.toList());
         return priceFuture.stream().map(CompletableFuture::join).collect(Collectors.toList());
     }

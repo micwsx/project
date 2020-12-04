@@ -1,5 +1,7 @@
 package com.research.java8.stream;
 
+import com.research.java8.collecting.CaloricLevel;
+
 import javax.swing.text.html.Option;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -24,6 +26,14 @@ public class MenuDemo {
                 new Dish("prawns", false, 300, Type.FISH),
                 new Dish("salmon", false, 450, Type.FISH)
         );
+
+
+
+        Map<Type, Map<CaloricLevel, List<Dish>>> collect = menu.stream().collect(groupingBy(Dish::getType, groupingBy(d -> {
+            if (d.getCalories() > 400)
+                return CaloricLevel.DIET;
+            else return CaloricLevel.FAT;
+        })));
 
 //        List<String> lowCaloriesDishesName = menu.parallelStream()
 //                .filter(d -> d.getCalories() < 400)
@@ -154,8 +164,6 @@ public class MenuDemo {
         System.out.println(countVal + "-" + countVal2);
 
     }
-
-
 
 
 }
