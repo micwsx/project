@@ -2,7 +2,11 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/SpringSourceCode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSourceCode/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSourceCode/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/anatomy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/anatomy/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demoboot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demoboot/src/main/java" charset="UTF-8" />
   </component>
 </project>

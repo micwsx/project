@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -51,6 +52,13 @@ public class DataSourceConfiguration {
 
     @Resource
     private Environment environment;
+
+    @Bean
+    public DataSource defaultDataSource(){
+        // spring默认datasource
+        DataSource springDatasource=new DriverManagerDataSource();
+        return springDatasource;
+    }
 
     @Bean
     public DataSource dataSource() {
