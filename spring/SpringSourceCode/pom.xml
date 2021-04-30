@@ -26,7 +26,7 @@
                 <artifactId>spring-framework-bom</artifactId>
                 <type>pom</type>
                 <scope>import</scope>
-                <version>5.1.13.RELEASE</version>
+                <version>5.1.18.RELEASE</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
